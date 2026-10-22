@@ -1,0 +1,62 @@
+{
+  "train": {
+    "total": 2719,
+    "multi_turn": 667,
+    "multi_turn_pct": "24.5%",
+    "structured_json": 421,
+    "categories": {
+      "fraud_security": 415,
+      "account_balance": 234,
+      "transfers_payments": 844,
+      "out_of_scope": 263,
+      "complaints_disputes": 134,
+      "cards_atm": 655,
+      "loans_products": 174
+    },
+    "languages": {
+      "urdulish": 2050,
+      "english": 529,
+      "mixed": 140
+    }
+  },
+  "validation": {
+    "total": 302,
+    "multi_turn": 88,
+    "multi_turn_pct": "29.1%",
+    "structured_json": 39,
+    "categories": {
+      "out_of_scope": 25,
+      "cards_atm": 84,
+      "fraud_security": 38,
+      "complaints_disputes": 13,
+      "transfers_payments": 109,
+      "loans_products": 16,
+      "account_balance": 17
+    },
+    "languages": {
+      "english": 51,
+      "urdulish": 240,
+      "mixed": 11
+    }
+  },
+  "golden_test": {
+    "total": 200,
+    "multi_turn": 52,
+    "multi_turn_pct": "26.0%",
+    "structured_json": 32,
+    "categories": {
+      "transfers_payments": 45,
+      "cards_atm": 40,
+      "fraud_security": 40,
+      "account_balance": 30,
+      "complaints_disputes": 25,
+      "loans_products": 10,
+      "out_of_scope": 10
+    },
+    "languages": {
+      "urdulish": 136,
+      "english": 54,
+      "mixed": 10
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initial_count": 6800,
+  "exact_duplicates_removed": 1305,
+  "near_duplicates_removed": 2274,
+  "length_filter_removed": 0,
+  "json_schema_errors_removed": 0,
+  "policy_hallucinations_removed": 0,
+  "pii_records_redacted": 102,
+  "final_clean_count": 3221
+}

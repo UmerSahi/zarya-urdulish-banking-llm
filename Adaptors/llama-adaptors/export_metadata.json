@@ -1,0 +1,4 @@
+{
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit",
+  "source_checkpoint": "/root/.unsloth/studio/outputs/unsloth_Llama-3.2-3B-Instruct-unsloth-bnb-4bit_1792750262"
+}

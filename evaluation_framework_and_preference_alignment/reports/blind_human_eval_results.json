@@ -1,0 +1,26 @@
+{
+  "total_evaluated_questions": 50,
+  "evaluators_count": 3,
+  "win_counts": {
+    "sft_model": 31,
+    "api_model": 15,
+    "base_model": 4,
+    "tie": 0
+  },
+  "win_rates": {
+    "sft_model_win_rate": 0.62,
+    "api_model_win_rate": 0.3,
+    "base_model_win_rate": 0.08,
+    "sft_vs_base_head_to_head": 0.886
+  },
+  "average_tone_scores": {
+    "sft_model": 4.8,
+    "api_model": 4.54,
+    "base_model": 3.19
+  },
+  "average_fluency_scores": {
+    "sft_model": 4.85,
+    "api_model": 4.44,
+    "base_model": 3.37
+  }
+}

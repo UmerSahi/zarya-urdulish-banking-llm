@@ -1,0 +1,194 @@
+[
+  {
+    "id": "REG-MMLU-01",
+    "category": "mmlu_reasoning",
+    "sub": "logic_math",
+    "question": "If a train travels at 60 km/h for 2.5 hours, what total distance has it traveled?",
+    "options": [
+      "A) 120 km",
+      "B) 150 km",
+      "C) 180 km",
+      "D) 200 km"
+    ],
+    "correct_answer": "B",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-MMLU-02",
+    "category": "mmlu_reasoning",
+    "sub": "economics",
+    "question": "In macroeconomics, what does GDP stand for?",
+    "options": [
+      "A) Gross Domestic Product",
+      "B) General Demand Policy",
+      "C) Government Deficit Percentage",
+      "D) Gross Deposit Profit"
+    ],
+    "correct_answer": "A",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-MMLU-03",
+    "category": "mmlu_reasoning",
+    "sub": "formal_logic",
+    "question": "All humans are mortal. Socrates is a human. What necessarily follows?",
+    "options": [
+      "A) Socrates is mortal",
+      "B) Socrates is immortal",
+      "C) Humans are Socrates",
+      "D) None of the above"
+    ],
+    "correct_answer": "A",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-MMLU-04",
+    "category": "mmlu_reasoning",
+    "sub": "world_history",
+    "question": "In which year did the United Nations officially establish its charter?",
+    "options": [
+      "A) 1918",
+      "B) 1939",
+      "C) 1945",
+      "D) 1950"
+    ],
+    "correct_answer": "C",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-MMLU-05",
+    "category": "mmlu_reasoning",
+    "sub": "math",
+    "question": "What is the square root of 144?",
+    "options": [
+      "A) 11",
+      "B) 12",
+      "C) 13",
+      "D) 14"
+    ],
+    "correct_answer": "B",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-ENG-01",
+    "category": "english_quality",
+    "sub": "subject_verb_agreement",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "A) The bouquet of roses smell wonderful.",
+      "B) The bouquet of roses smells wonderful.",
+      "C) The bouquet of roses are smelling wonderful.",
+      "D) The bouquet of roses smelling wonderful."
+    ],
+    "correct_answer": "B",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-ENG-02",
+    "category": "english_quality",
+    "sub": "vocabulary",
+    "question": "What is the closest synonym for the word 'ubiquitous'?",
+    "options": [
+      "A) Omnipresent",
+      "B) Rare",
+      "C) Secretive",
+      "D) Fragile"
+    ],
+    "correct_answer": "A",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-ENG-03",
+    "category": "english_quality",
+    "sub": "punctuation",
+    "question": "Which sentence uses the semicolon correctly?",
+    "options": [
+      "A) I have a meeting tomorrow; however, I will review your draft tonight.",
+      "B) I have a meeting; tomorrow however I will review your draft tonight.",
+      "C) I have; a meeting tomorrow however I will review.",
+      "D) I have a meeting tomorrow however; I will review."
+    ],
+    "correct_answer": "A",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-OOD-01",
+    "category": "novel_topics",
+    "sub": "astronomy",
+    "question": "Which planet in the solar system has the most prominent ring system?",
+    "options": [
+      "A) Mars",
+      "B) Saturn",
+      "C) Venus",
+      "D) Mercury"
+    ],
+    "correct_answer": "B",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-OOD-02",
+    "category": "novel_topics",
+    "sub": "python_programming",
+    "question": "In Python, which built-in function returns the number of items in a list?",
+    "options": [
+      "A) count()",
+      "B) size()",
+      "C) len()",
+      "D) length()"
+    ],
+    "correct_answer": "C",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-OOD-03",
+    "category": "novel_topics",
+    "sub": "biology",
+    "question": "What organelle is known as the powerhouse of eukaryotic cells?",
+    "options": [
+      "A) Ribosome",
+      "B) Mitochondria",
+      "C) Nucleus",
+      "D) Golgi apparatus"
+    ],
+    "correct_answer": "B",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  },
+  {
+    "id": "REG-OOD-04",
+    "category": "novel_topics",
+    "sub": "geography",
+    "question": "Which is the longest river in the world?",
+    "options": [
+      "A) Amazon",
+      "B) Nile",
+      "C) Yangtze",
+      "D) Mississippi"
+    ],
+    "correct_answer": "B",
+    "base_correct": true,
+    "sft_correct": true,
+    "dpo_correct": true
+  }
+]

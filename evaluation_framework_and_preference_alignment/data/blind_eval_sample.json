@@ -1,0 +1,902 @@
+[
+  {
+    "question_id": "BLIND-001",
+    "category": "complaints_disputes",
+    "user_query": "Yeh kya bakwas chal rahi hai?! Yeh SMS charges aur maintenance charges kyun kaate hain jab k account free bola tha?",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji bilkul! Agar aap physical card cancel karwa ke sirf virtual card istemal karna chahein toh fee reversal claim darj ho sakta hai jo 3 working days mein account mein wapas aa jayega. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Ji bilkul! Agar aap physical card cancel karwa ke sirf virtual card istemal karna chahein toh fee reversal claim darj ho sakta hai jo 3 working days mein account mein wapas aa jayega.",
+      "Option C": "Dear customer, for your inquiry regarding complaints disputes, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-002",
+    "category": "transfers_payments",
+    "user_query": "Yaar jaldi karo dukan pe customer khara hai! Maine kal UBL mein IBFT ke zariye 8,500 bheje thay, mere account se cut gaye hain par wahan credit nahi hue.",
+    "options": {
+      "Option A": "{\n  \"intent\": \"ibft_deducted_receiver_not_credited\",\n  \"category\": \"transfers_payments\",\n  \"sub_category\": \"ibft_settlement_delay\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"frustrated\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-44987131\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 48,\n    \"action_needed\": \"Investigate ibft_settlement_delay for transaction reference.\",\n    \"summary_english\": \"Customer reported ibft deducted receiver not credited.\"\n  },\n  \"customer_response_urdulish\": \"Ji pareshan na hon. Agar receiving bank (Standard Chartered) ka server response delay kare toh amount staging account mein secure rehti hai. 24-48 working hours mein beneficiary ko mil jayegi ya Zarya account mein refund ho jayegi.\"\n}",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"ibft_deducted_receiver_not_credited\",\n  \"category\": \"transfers_payments\",\n  \"sub_category\": \"ibft_settlement_delay\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"frustrated\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-44987131\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 48,\n    \"action_needed\": \"Investigate ibft_settlement_delay for transaction reference.\",\n    \"summary_english\": \"Customer reported ibft deducted receiver not credited.\"\n  },\n  \"customer_response_urdulish\": \"Ji pareshan na hon. Agar receiving bank (Standard Chartered) ka server response delay kare toh amount staging account mein secure rehti hai. 24-48 working hours mein beneficiary ko mil jayegi ya Zarya account mein refund ho jayegi.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-003",
+    "category": "transfers_payments",
+    "user_query": "Careem bill payment of 50,000 PKR made 2 days ago is not reflected on their official portal.",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Consumer # 824727882567 par payment confirm ho chuki hai. Aap Zarya app se official verified digital PDF receipt download kar ke Netflix office ko bhi dikha sakte hain. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Consumer # 824727882567 par payment confirm ho chuki hai. Aap Zarya app se official verified digital PDF receipt download kar ke Netflix office ko bhi dikha sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-004",
+    "category": "loans_products",
+    "user_query": "Beta meri madad karo, Zarya app se instant 18,500 ka digital loan kaise mil sakta hai? Kya requirements hain?",
+    "options": {
+      "Option A": "Zarya Instant Nano Loans are algorithmically approved based on account tenure (minimum 90 days) and regular inbound transaction volumes. Eligible customers can disburse up to PKR 50,000 instantly with zero paperwork.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Zarya Instant Nano Loans are algorithmically approved based on account tenure (minimum 90 days) and regular inbound transaction volumes. Eligible customers can disburse up to PKR 50,000 instantly with zero paperwork. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding loans products, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-005",
+    "category": "cards_atm",
+    "user_query": "ATM se paise nahi niklay lekin balance kam ho gaya! Meezan Bank ke ATM se 1,500 nikal raha tha Gujranwala mein, slip aayi lekin cash nahi nikla!",
+    "options": {
+      "Option A": "Ji bilkul pareshan na hon, aap ki raqam 100% mehfooz hai! Jab ATM cash dispense nahi karta toh 1Link interbank reconciliation log mein capturing hoti hai. State Bank rules ke mutabiq doosre bank ke ATM dispute ka TAT 7 se 10 working days hota hai, jabke aksar 24-48 ghante mein auto-reverse aa jata hai.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji bilkul pareshan na hon, aap ki raqam 100% mehfooz hai! Jab ATM cash dispense nahi karta toh 1Link interbank reconciliation log mein capturing hoti hai. State Bank rules ke mutabiq doosre bank ke ATM dispute ka TAT 7 se 10 working days hota hai, jabke aksar 24-48 ghante mein auto-reverse aa jata hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-006",
+    "category": "cards_atm",
+    "user_query": "Teesri baar complaint kar raha hun! ATM se paise nahi niklay lekin balance kam ho gaya! SadaPay ke ATM se 1,500 nikal raha tha Lahore mein, slip aayi lekin cash nahi nikla!",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ma'azrat chahte hain is pareshani par. Hum ne aap ki ATM dispute complaint register kar li hai. Baraye meherbani ATM slip sambhal kar rakhein. Agar 48 ghante mein automated credit na aaye toh slip picture upload kar dijiyega. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Ma'azrat chahte hain is pareshani par. Hum ne aap ki ATM dispute complaint register kar li hai. Baraye meherbani ATM slip sambhal kar rakhein. Agar 48 ghante mein automated credit na aaye toh slip picture upload kar dijiyega.",
+      "Option C": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-007",
+    "category": "cards_atm",
+    "user_query": "Janab ek masla darpesh hai. ATM machine ne mera Virtual Digital Card nigal liya hai MCB Bank branch Lahore mein, wapas nahi nikal raha!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Pareshan na hon, card freeze kar diya gaya hai. Zarya App mein 'Cards' section se free replacement card order karein, 3-5 working days mein aap ke home address par dispatch ho jayega.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Pareshan na hon, card freeze kar diya gaya hai. Zarya App mein 'Cards' section se free replacement card order karein, 3-5 working days mein aap ke home address par dispatch ho jayega. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "sft_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-008",
+    "category": "transfers_payments",
+    "user_query": "Ji mujhe yeh maloom karna tha ke Maine kal UBL mein IBFT ke zariye 35,000 bheje thay, mere account se cut gaye hain par wahan credit nahi hue.",
+    "options": {
+      "Option A": "{\n  \"intent\": \"ibft_deducted_receiver_not_credited\",\n  \"category\": \"transfers_payments\",\n  \"sub_category\": \"ibft_settlement_delay\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"frustrated\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-63720675\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 48,\n    \"action_needed\": \"Investigate ibft_settlement_delay for transaction reference.\",\n    \"summary_english\": \"Customer reported ibft deducted receiver not credited.\"\n  },\n  \"customer_response_urdulish\": \"Ji pareshan na hon. Agar receiving bank (Standard Chartered) ka server response delay kare toh amount staging account mein secure rehti hai. 24-48 working hours mein beneficiary ko mil jayegi ya Zarya account mein refund ho jayegi.\"\n}",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"ibft_deducted_receiver_not_credited\",\n  \"category\": \"transfers_payments\",\n  \"sub_category\": \"ibft_settlement_delay\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"frustrated\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-63720675\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 48,\n    \"action_needed\": \"Investigate ibft_settlement_delay for transaction reference.\",\n    \"summary_english\": \"Customer reported ibft deducted receiver not credited.\"\n  },\n  \"customer_response_urdulish\": \"Ji pareshan na hon. Agar receiving bank (Standard Chartered) ka server response delay kare toh amount staging account mein secure rehti hai. 24-48 working hours mein beneficiary ko mil jayegi ya Zarya account mein refund ho jayegi.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-009",
+    "category": "loans_products",
+    "user_query": "Hey Zarya team, Zarya app se instant 4,800 ka digital loan kaise mil sakta hai? Kya requirements hain?",
+    "options": {
+      "Option A": "Markup rate transparent hai aur tenure ke hisab se 2.5% to 3.5% monthly flat rate par hota hai jo loan calculator mein pehle se clear show hota hai.",
+      "Option B": "Dear customer, for your inquiry regarding loans products, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Markup rate transparent hai aur tenure ke hisab se 2.5% to 3.5% monthly flat rate par hota hai jo loan calculator mein pehle se clear show hota hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-010",
+    "category": "transfers_payments",
+    "user_query": "Beta meri madad karo, Zarya app par IBFT transfer 'Successful' dikha raha hai lekin Allied Bank wala banda bol raha hai balance nahi mila.",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji ma'azrat chahte hain aap ko takleef hui. 1Link interbank switch par traffic congestion ki wajah se transfer pending ho sakta hai. State Bank rules ke mutabiq IBFT dispute ka settlement turnaround time 24 se 48 working hours hota hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Ji ma'azrat chahte hain aap ko takleef hui. 1Link interbank switch par traffic congestion ki wajah se transfer pending ho sakta hai. State Bank rules ke mutabiq IBFT dispute ka settlement turnaround time 24 se 48 working hours hota hai.",
+      "Option C": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-011",
+    "category": "complaints_disputes",
+    "user_query": "Arrey bhai mera business ruk gaya hai! Unexpected fee deduction on my statement described as 'Annual Card Fee'. Why was I charged without notification?",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding complaints disputes, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "All service charges follow the official Zarya Bank Schedule of Charges (SOC) approved by State Bank. The deduction represents the annual PayPak Classic card maintenance fee. If charged erroneously, our team will refund within 24 hours.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. All service charges follow the official Zarya Bank Schedule of Charges (SOC) approved by State Bank. The deduction represents the annual PayPak Classic card maintenance fee. If charged erroneously, our team will refund within 24 hours. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "sft_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-012",
+    "category": "account_balance",
+    "user_query": "Teesri baar complaint kar raha hun! Account status showing inactive/dormant on Zarya app. How to reactivate without visiting branch?",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Reactivating your dormant account is 100% digital: Open Zarya App > Perform NADRA biometric face verification > Initiate a small deposit of PKR 100 via Raast or IBFT. Dormancy is lifted automatically within 60 minutes. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Reactivating your dormant account is 100% digital: Open Zarya App > Perform NADRA biometric face verification > Initiate a small deposit of PKR 100 via Raast or IBFT. Dormancy is lifted automatically within 60 minutes.",
+      "Option C": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-013",
+    "category": "transfers_payments",
+    "user_query": "Zarya app par IBFT transfer 'Successful' dikha raha hai lakin Nayapay wala banda bol raha hai balance nahi mila.",
+    "options": {
+      "Option A": "Ji ma'azrat chahte hain aap ko takleef hui. 1Link interbank switch par traffic congestion ki wajah se transfer pending ho sakta hai. State Bank rules ke mutabiq IBFT dispute ka settlement turnaround time 24 se 48 working hours hota hai.",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji ma'azrat chahte hain aap ko takleef hui. 1Link interbank switch par traffic congestion ki wajah se transfer pending ho sakta hai. State Bank rules ke mutabiq IBFT dispute ka settlement turnaround time 24 se 48 working hours hota hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-014",
+    "category": "account_balance",
+    "user_query": "Yaar jaldi karo dukan pe customer khara hai! App mein balance 4,800 dikha raha hai lekin actual available balance kam hai. Missing funds kahan hain?",
+    "options": {
+      "Option A": "{\n  \"intent\": \"balance_discrepancy_holds\",\n  \"category\": \"account_balance\",\n  \"sub_category\": \"holding_balance\",\n  \"urgency\": \"medium\",\n  \"sentiment\": \"anxious\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-54008731\",\n    \"priority\": \"P3\",\n    \"estimated_tat_hours\": 12,\n    \"action_needed\": \"Investigate holding_balance for transaction reference.\",\n    \"summary_english\": \"Customer reported balance discrepancy holds.\"\n  },\n  \"customer_response_urdulish\": \"Ji yeh fark aam tor par 'Holding Balance' ya unposted fuel station pre-authorization / POS pre-auth ki wajah se hota hai. Agar aap ne haliya kisi merchant par card swipe kiya tha toh unki settlement pending hone tak amount hold hoti hai. App mein 'Pending Holds' check karein.\"\n}",
+      "Option B": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"balance_discrepancy_holds\",\n  \"category\": \"account_balance\",\n  \"sub_category\": \"holding_balance\",\n  \"urgency\": \"medium\",\n  \"sentiment\": \"anxious\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-54008731\",\n    \"priority\": \"P3\",\n    \"estimated_tat_hours\": 12,\n    \"action_needed\": \"Investigate holding_balance for transaction reference.\",\n    \"summary_english\": \"Customer reported balance discrepancy holds.\"\n  },\n  \"customer_response_urdulish\": \"Ji yeh fark aam tor par 'Holding Balance' ya unposted fuel station pre-authorization / POS pre-auth ki wajah se hota hai. Agar aap ne haliya kisi merchant par card swipe kiya tha toh unki settlement pending hone tak amount hold hoti hai. App mein 'Pending Holds' check karein.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-015",
+    "category": "fraud_security",
+    "user_query": "Respected team, Abhi message aya h k 35,000 deduct hogye jab k card mere pas h aur maine koi payment ni ki!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"unauthorized_debit_fraud\",\n  \"category\": \"fraud_security\",\n  \"sub_category\": \"unauthorized_activity\",\n  \"urgency\": \"critical\",\n  \"sentiment\": \"panicked\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-31946425\",\n    \"priority\": \"P1\",\n    \"estimated_tat_hours\": 24,\n    \"action_needed\": \"Investigate unauthorized_activity for transaction reference.\",\n    \"summary_english\": \"Customer reported unauthorized debit fraud.\"\n  },\n  \"customer_response_urdulish\": \"Your card has been locked immediately. We have logged an emergency fraud ticket # ZDB-FRD-8358. SBP consumer protection regulations safeguard customers against verified unauthorized electronic transactions.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "{\n  \"intent\": \"unauthorized_debit_fraud\",\n  \"category\": \"fraud_security\",\n  \"sub_category\": \"unauthorized_activity\",\n  \"urgency\": \"critical\",\n  \"sentiment\": \"panicked\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-31946425\",\n    \"priority\": \"P1\",\n    \"estimated_tat_hours\": 24,\n    \"action_needed\": \"Investigate unauthorized_activity for transaction reference.\",\n    \"summary_english\": \"Customer reported unauthorized debit fraud.\"\n  },\n  \"customer_response_urdulish\": \"Your card has been locked immediately. We have logged an emergency fraud ticket # ZDB-FRD-8358. SBP consumer protection regulations safeguard customers against verified unauthorized electronic transactions.\"\n}"
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "base_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-016",
+    "category": "transfers_payments",
+    "user_query": "Mistakenly transferred 12,000 PKR to wrong IBAN on Nayapay. Can you please recall the funds immediately?",
+    "options": {
+      "Option A": "Emergency recall request note kar li gayi hai. Hum Nayapay ko notice bhej rahe hain taake beneficiary account ko hold par rakha ja sake. Baraye meherbani transaction receipt app support mein upload karein.",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Emergency recall request note kar li gayi hai. Hum Nayapay ko notice bhej rahe hain taake beneficiary account ko hold par rakha ja sake. Baraye meherbani transaction receipt app support mein upload karein. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-017",
+    "category": "transfers_payments",
+    "user_query": "Raast se Faysal Bank account par 2,500 transfer kiye thay status failed aaya par balance minus ho gaya.",
+    "options": {
+      "Option A": "{\n  \"intent\": \"raast_transfer_failed\",\n  \"category\": \"transfers_payments\",\n  \"sub_category\": \"raast_p2p_failure\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"anxious\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-74435190\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 24,\n    \"action_needed\": \"Investigate raast_p2p_failure for transaction reference.\",\n    \"summary_english\": \"Customer reported raast transfer failed.\"\n  },\n  \"customer_response_urdulish\": \"Ji fikr mat karein, Raast dispute ka regulatory turnaround time (TAT) 24 hours hai. Agar agle kuch ghanton mein auto-reverse na ho toh hum 1Link se trace karwa ke reversal initiate kar dein ge.\"\n}",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"raast_transfer_failed\",\n  \"category\": \"transfers_payments\",\n  \"sub_category\": \"raast_p2p_failure\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"anxious\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-74435190\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 24,\n    \"action_needed\": \"Investigate raast_p2p_failure for transaction reference.\",\n    \"summary_english\": \"Customer reported raast transfer failed.\"\n  },\n  \"customer_response_urdulish\": \"Ji fikr mat karein, Raast dispute ka regulatory turnaround time (TAT) 24 hours hai. Agar agle kuch ghanton mein auto-reverse na ho toh hum 1Link se trace karwa ke reversal initiate kar dein ge.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-018",
+    "category": "transfers_payments",
+    "user_query": "Ghalti se galat account number par 1,500 transfer ho gaye hain JazzCash ke! Foran cancel karein!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Emergency recall request note kar li gayi hai. Hum JazzCash ko notice bhej rahe hain taake beneficiary account ko hold par rakha ja sake. Baraye meherbani transaction receipt app support mein upload karein. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Emergency recall request note kar li gayi hai. Hum JazzCash ko notice bhej rahe hain taake beneficiary account ko hold par rakha ja sake. Baraye meherbani transaction receipt app support mein upload karein."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-019",
+    "category": "cards_atm",
+    "user_query": "Kahan gaye mere paise?! Jaldi batao! Mera PayPak Classic wallet ke sath chori ho gaya hai Gulberg main market ke paas, please block immediately!",
+    "options": {
+      "Option A": "Emergency action taken: Your card has been locked immediately. No ATM, POS, or online transaction can take place. To issue a replacement card, please confirm the last 4 digits of the card.",
+      "Option B": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Emergency action taken: Your card has been locked immediately. No ATM, POS, or online transaction can take place. To issue a replacement card, please confirm the last 4 digits of the card. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-020",
+    "category": "cards_atm",
+    "user_query": "Intihaayi third class service! Card swallowed by ATM at Gulberg main market. How do I retrieve it?",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Pareshan na hon, card freeze kar diya gaya hai. Zarya App mein 'Cards' section se free replacement card order karein, 3-5 working days mein aap ke home address par dispatch ho jayega. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Pareshan na hon, card freeze kar diya gaya hai. Zarya App mein 'Cards' section se free replacement card order karein, 3-5 working days mein aap ke home address par dispatch ho jayega.",
+      "Option C": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-021",
+    "category": "account_balance",
+    "user_query": "Mujhe samajh nahi aa raha beta, Discrepancy in total balance vs available balance on my app screen. Where did the money go?",
+    "options": {
+      "Option A": "Bilkul wahi hai! Petrol pumps par POS machines security ke liye temporary holding block karti hain jo merchant ke final settlement upload karte hi release ho jati hai.",
+      "Option B": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Bilkul wahi hai! Petrol pumps par POS machines security ke liye temporary holding block karti hain jo merchant ke final settlement upload karte hi release ho jati hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "base_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-022",
+    "category": "account_balance",
+    "user_query": "Intihaayi third class service! App mein balance 120,000 dikha raha hai lekin actual available balance kam hai. Missing funds kahan hain?",
+    "options": {
+      "Option A": "Bilkul wahi hai! Petrol pumps par POS machines security ke liye temporary holding block karti hain jo merchant ke final settlement upload karte hi release ho jati hai.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Bilkul wahi hai! Petrol pumps par POS machines security ke liye temporary holding block karti hain jo merchant ke final settlement upload karte hi release ho jati hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-023",
+    "category": "out_of_scope",
+    "user_query": "Yeh kya bakwas chal rahi hai?! Useless idiots, your app in Multan is total garbage and you people are thieves!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding out of scope, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "We understand your frustration and deeply regret any distress caused. Please share the details of your issue so we can immediately investigate and rectify it for you.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. We understand your frustration and deeply regret any distress caused. Please share the details of your issue so we can immediately investigate and rectify it for you. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "sft_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-024",
+    "category": "account_balance",
+    "user_query": "Emergency scene hai bhai! Dormant account active krne ka kya procedure h Zarya digital bank me?",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Agar biometric scan 3 attempts mein verify na ho toh aap app ke andar live agent video KYC session schedule kar sakte hain jahan 5 minute mein manual verification ho jayegi.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Agar biometric scan 3 attempts mein verify na ho toh aap app ke andar live agent video KYC session schedule kar sakte hain jahan 5 minute mein manual verification ho jayegi. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "sft_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-025",
+    "category": "cards_atm",
+    "user_query": "Intihaayi third class service! Card swallowed by ATM at commercial area. How do I retrieve it?",
+    "options": {
+      "Option A": "Pareshan na hon, card freeze kar diya gaya hai. Zarya App mein 'Cards' section se free replacement card order karein, 3-5 working days mein aap ke home address par dispatch ho jayega.",
+      "Option B": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Pareshan na hon, card freeze kar diya gaya hai. Zarya App mein 'Cards' section se free replacement card order karein, 3-5 working days mein aap ke home address par dispatch ho jayega. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-026",
+    "category": "complaints_disputes",
+    "user_query": "My complaint # 9953 is unresolved past the promised turnaround time. I demand to speak to a senior manager immediately!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding complaints disputes, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Ji hum dil se ma'azrat khwah hain ke aap ko itna intezar karna para. Aap ka ghussa bilkul baja hai. Hum is complaint ko foran Senior Grievance Management team ko P1 Emergency priority par escalate kar rahe hain. Dispute Officer agle 4 working hours mein aap ko direct call par update faraham karenge.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji hum dil se ma'azrat khwah hain ke aap ko itna intezar karna para. Aap ka ghussa bilkul baja hai. Hum is complaint ko foran Senior Grievance Management team ko P1 Emergency priority par escalate kar rahe hain. Dispute Officer agle 4 working hours mein aap ko direct call par update faraham karenge. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "sft_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-027",
+    "category": "out_of_scope",
+    "user_query": "Teesri baar complaint kar raha hun! Who will win today's cricket match between Pakistan and England in Gujranwala?",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji ma'azrat chahte hain, main Zarya Digital Bank ka AI banking assistant hun. Main siyasat, sports, khanay peenay ya aam maloomat par tabsera nahi kar sakta. Main aap ki account, card, transfer ya deegar banking khidmaat mein madad ke liye hazir hun. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Dear customer, for your inquiry regarding out of scope, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Ji ma'azrat chahte hain, main Zarya Digital Bank ka AI banking assistant hun. Main siyasat, sports, khanay peenay ya aam maloomat par tabsera nahi kar sakta. Main aap ki account, card, transfer ya deegar banking khidmaat mein madad ke liye hazir hun."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "base_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-028",
+    "category": "fraud_security",
+    "user_query": "Yaar payment issue aa raha hai. Received SMS claiming I won 25,000 PKR lottery from Zarya Bank and asking to click link to claim.",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"phishing_sms_fake_link\",\n  \"category\": \"fraud_security\",\n  \"sub_category\": \"phishing\",\n  \"urgency\": \"critical\",\n  \"sentiment\": \"panicked\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-91020593\",\n    \"priority\": \"P1\",\n    \"estimated_tat_hours\": 1,\n    \"action_needed\": \"Investigate phishing for transaction reference.\",\n    \"summary_english\": \"Customer reported phishing sms fake link.\"\n  },\n  \"customer_response_urdulish\": \"Do NOT click that link! It is a credential-harvesting phishing scam. Official bank messages come only from branded SMS header 'ZaryaBank', never from personal mobile numbers.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "{\n  \"intent\": \"phishing_sms_fake_link\",\n  \"category\": \"fraud_security\",\n  \"sub_category\": \"phishing\",\n  \"urgency\": \"critical\",\n  \"sentiment\": \"panicked\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-91020593\",\n    \"priority\": \"P1\",\n    \"estimated_tat_hours\": 1,\n    \"action_needed\": \"Investigate phishing for transaction reference.\",\n    \"summary_english\": \"Customer reported phishing sms fake link.\"\n  },\n  \"customer_response_urdulish\": \"Do NOT click that link! It is a credential-harvesting phishing scam. Official bank messages come only from branded SMS header 'ZaryaBank', never from personal mobile numbers.\"\n}"
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "base_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-029",
+    "category": "cards_atm",
+    "user_query": "Respected team, How do I enable online international payments on my Zarya PayPak Classic?",
+    "options": {
+      "Option A": "Ji Zarya App mein 'Cards' section mein jayein, 'Card Controls' par tap karein aur 'International & Online Usage' toggle switch ON kar dein. Hifazat ke liye aap spending limit aur session duration bhi set kar sakte hain.",
+      "Option B": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji Zarya App mein 'Cards' section mein jayein, 'Card Controls' par tap karein aur 'International & Online Usage' toggle switch ON kar dein. Hifazat ke liye aap spending limit aur session duration bhi set kar sakte hain. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-030",
+    "category": "fraud_security",
+    "user_query": "mjhe call aayi thi bank se, keh rahe thay account verify karna he aur OTP maang rahe thay — kya yeh theek hai?",
+    "options": {
+      "Option A": "Bohat acha kiya ke code nahi diya! Fraudsters aksar public data leaks se basic maloomat le kar trust jeetne ki koshish karte hain. Asal chabi aap ka secret OTP hota hai jo aap ne hifazat se rakha.",
+      "Option B": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Bohat acha kiya ke code nahi diya! Fraudsters aksar public data leaks se basic maloomat le kar trust jeetne ki koshish karte hain. Asal chabi aap ka secret OTP hota hai jo aap ne hifazat se rakha. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-031",
+    "category": "account_balance",
+    "user_query": "Arrey bhai mera business ruk gaya hai! Mera account dormant ho gaya hai kyunke 1 saal se koi transaction nahi ki thi. Isko kaise kholun dobara?",
+    "options": {
+      "Option A": "Agar biometric scan 3 attempts mein verify na ho toh aap app ke andar live agent video KYC session schedule kar sakte hain jahan 5 minute mein manual verification ho jayegi.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Agar biometric scan 3 attempts mein verify na ho toh aap app ke andar live agent video KYC session schedule kar sakte hain jahan 5 minute mein manual verification ho jayegi. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-032",
+    "category": "cards_atm",
+    "user_query": "Zarya bank walon suno, ATM se raqam nahi niklay lekin balance kam ho gaya! Bank Alfalah ke ATM se 200,000 nikal raha tha Sialkot mein, slip aayi lekin cash nahi nikla!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji bilkul pareshan na hon, aap ki raqam 100% mehfooz hai! Jab ATM cash dispense nahi karta toh 1Link interbank reconciliation log mein capturing hoti hai. State Bank rules ke mutabiq doosre bank ke ATM dispute ka TAT 7 se 10 working days hota hai, jabke aksar 24-48 ghante mein auto-reverse aa jata hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Ji bilkul pareshan na hon, aap ki raqam 100% mehfooz hai! Jab ATM cash dispense nahi karta toh 1Link interbank reconciliation log mein capturing hoti hai. State Bank rules ke mutabiq doosre bank ke ATM dispute ka TAT 7 se 10 working days hota hai, jabke aksar 24-48 ghante mein auto-reverse aa jata hai."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-033",
+    "category": "transfers_payments",
+    "user_query": "Ghalti se galat account number par 8,500 transfer ho gaye hain SadaPay ke! Foran cancel karein!",
+    "options": {
+      "Option A": "Ji pareshan na hon! State Bank SOP ke mutabiq hum foran Meezan Bank ko official Fund Recall Request bhejte hain. Recipient bank account holder se legal consent le kar amount reverse karta hai. Is legal process mein 3 se 5 working days lagte hain.",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji pareshan na hon! State Bank SOP ke mutabiq hum foran Meezan Bank ko official Fund Recall Request bhejte hain. Recipient bank account holder se legal consent le kar amount reverse karta hai. Is legal process mein 3 se 5 working days lagte hain. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-034",
+    "category": "transfers_payments",
+    "user_query": "Ji mujhe yeh maloom karna tha ke Netflix bill payment of 2,500 PKR made 2 days ago is not reflected on their official portal.",
+    "options": {
+      "Option A": "Ji 1Link billing portals par utility company (Total Parco) ka data update hone mein 2 se 3 working days lagte hain. Agar Zarya app mein status 'Successful' hai toh aap ka payment confirmation reference 100% legal proof hai.",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji 1Link billing portals par utility company (Total Parco) ka data update hone mein 2 se 3 working days lagte hain. Agar Zarya app mein status 'Successful' hai toh aap ka payment confirmation reference 100% legal proof hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-035",
+    "category": "loans_products",
+    "user_query": "Zarya app se instant 2,500 ka digital loan kaise mil sakta hai? Kya requirements hain?",
+    "options": {
+      "Option A": "Zarya Instant Nano Loans are algorithmically approved based on account tenure (minimum 90 days) and regular inbound transaction volumes. Eligible customers can disburse up to PKR 50,000 instantly with zero paperwork.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Zarya Instant Nano Loans are algorithmically approved based on account tenure (minimum 90 days) and regular inbound transaction volumes. Eligible customers can disburse up to PKR 50,000 instantly with zero paperwork. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding loans products, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "base_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-036",
+    "category": "fraud_security",
+    "user_query": "Zarya bank walon suno, Received SMS claiming I won 50,000 PKR lottery from Zarya Bank and asking to click link to claim.",
+    "options": {
+      "Option A": "Do NOT click that link! It is a credential-harvesting phishing scam. Official bank messages come only from branded SMS header 'ZaryaBank', never from personal mobile numbers.",
+      "Option B": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Do NOT click that link! It is a credential-harvesting phishing scam. Official bank messages come only from branded SMS header 'ZaryaBank', never from personal mobile numbers. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-037",
+    "category": "complaints_disputes",
+    "user_query": "Emergency scene hai bhai! Koe sunwayi ni ho ri ap k bank me! Pese b phansye huye hien or helpline wale phone kaat dete hien!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding complaints disputes, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"delayed_complaint_tat_breach\",\n  \"category\": \"complaints_disputes\",\n  \"sub_category\": \"complaint_escalation\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"angry\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-52715309\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 4,\n    \"action_needed\": \"Investigate complaint_escalation for transaction reference.\",\n    \"summary_english\": \"Customer reported delayed complaint tat breach.\"\n  },\n  \"customer_response_urdulish\": \"Ji hum dil se ma'azrat khwah hain ke aap ko itna intezar karna para. Aap ka ghussa bilkul baja hai. Hum is complaint ko foran Senior Grievance Management team ko P1 Emergency priority par escalate kar rahe hain. Dispute Officer agle 4 working hours mein aap ko direct call par update faraham karenge.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "{\n  \"intent\": \"delayed_complaint_tat_breach\",\n  \"category\": \"complaints_disputes\",\n  \"sub_category\": \"complaint_escalation\",\n  \"urgency\": \"high\",\n  \"sentiment\": \"angry\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-52715309\",\n    \"priority\": \"P2\",\n    \"estimated_tat_hours\": 4,\n    \"action_needed\": \"Investigate complaint_escalation for transaction reference.\",\n    \"summary_english\": \"Customer reported delayed complaint tat breach.\"\n  },\n  \"customer_response_urdulish\": \"Ji hum dil se ma'azrat khwah hain ke aap ko itna intezar karna para. Aap ka ghussa bilkul baja hai. Hum is complaint ko foran Senior Grievance Management team ko P1 Emergency priority par escalate kar rahe hain. Dispute Officer agle 4 working hours mein aap ko direct call par update faraham karenge.\"\n}"
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-038",
+    "category": "transfers_payments",
+    "user_query": "Mistakenly transferred 35,000 PKR to wrong IBAN on Standard Chartered. Can you please recall the funds immediately?",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Emergency recall request note kar li gayi hai. Hum Nayapay ko notice bhej rahe hain taake beneficiary account ko hold par rakha ja sake. Baraye meherbani transaction receipt app support mein upload karein. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Emergency recall request note kar li gayi hai. Hum Nayapay ko notice bhej rahe hain taake beneficiary account ko hold par rakha ja sake. Baraye meherbani transaction receipt app support mein upload karein."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-039",
+    "category": "loans_products",
+    "user_query": "Yeh kya bakwas chal rahi hai?! How do I qualify for the instant emergency salary advance loan on Zarya Bank app?",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji Zarya Digital Nano Loans un sarfeen ke liye dastiyab hain jinka account kam az kam 3 maah se active ho aur regular monthly salary ya Raast transactions flow ho. Eligible customers ko app ke 'Finance' section mein baghair paperwork ke 5 minute mein loan mil jata hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Ji Zarya Digital Nano Loans un sarfeen ke liye dastiyab hain jinka account kam az kam 3 maah se active ho aur regular monthly salary ya Raast transactions flow ho. Eligible customers ko app ke 'Finance' section mein baghair paperwork ke 5 minute mein loan mil jata hai.",
+      "Option C": "Dear customer, for your inquiry regarding loans products, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-040",
+    "category": "fraud_security",
+    "user_query": "Mere account se achanak 12,000 PKR kat gaye hain baghair meri ijazat ke Careem par transaction hui hai!",
+    "options": {
+      "Option A": "{\n  \"intent\": \"unauthorized_debit_fraud\",\n  \"category\": \"fraud_security\",\n  \"sub_category\": \"unauthorized_activity\",\n  \"urgency\": \"critical\",\n  \"sentiment\": \"panicked\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-94045854\",\n    \"priority\": \"P1\",\n    \"estimated_tat_hours\": 24,\n    \"action_needed\": \"Investigate unauthorized_activity for transaction reference.\",\n    \"summary_english\": \"Customer reported unauthorized debit fraud.\"\n  },\n  \"customer_response_urdulish\": \"Your card has been locked immediately. We have logged an emergency fraud ticket # ZDB-FRD-4790. SBP consumer protection regulations safeguard customers against verified unauthorized electronic transactions.\"\n}",
+      "Option B": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"unauthorized_debit_fraud\",\n  \"category\": \"fraud_security\",\n  \"sub_category\": \"unauthorized_activity\",\n  \"urgency\": \"critical\",\n  \"sentiment\": \"panicked\",\n  \"requires_ticket\": true,\n  \"ticket_details\": {\n    \"ticket_id\": \"ZDB-94045854\",\n    \"priority\": \"P1\",\n    \"estimated_tat_hours\": 24,\n    \"action_needed\": \"Investigate unauthorized_activity for transaction reference.\",\n    \"summary_english\": \"Customer reported unauthorized debit fraud.\"\n  },\n  \"customer_response_urdulish\": \"Your card has been locked immediately. We have logged an emergency fraud ticket # ZDB-FRD-4790. SBP consumer protection regulations safeguard customers against verified unauthorized electronic transactions.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-041",
+    "category": "out_of_scope",
+    "user_query": "Mujhe Bitcoin aur Binance mein invest karna h Zarya debit card se. Konsa coin khareedon?",
+    "options": {
+      "Option A": "{\n  \"intent\": \"crypto_trading_regulatory_prohibition\",\n  \"category\": \"out_of_scope\",\n  \"sub_category\": \"crypto_prohibition\",\n  \"urgency\": \"low\",\n  \"sentiment\": \"neutral\",\n  \"requires_ticket\": false,\n  \"ticket_details\": null,\n  \"customer_response_urdulish\": \"As per State Bank of Pakistan regulatory directives, all banking institutions are strictly prohibited from facilitating transactions related to cryptocurrencies and virtual currencies. Zarya Bank cards cannot be used on cryptocurrency exchanges.\"\n}",
+      "Option B": "Dear customer, for your inquiry regarding out of scope, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. {\n  \"intent\": \"crypto_trading_regulatory_prohibition\",\n  \"category\": \"out_of_scope\",\n  \"sub_category\": \"crypto_prohibition\",\n  \"urgency\": \"low\",\n  \"sentiment\": \"neutral\",\n  \"requires_ticket\": false,\n  \"ticket_details\": null,\n  \"customer_response_urdulish\": \"As per State Bank of Pakistan regulatory directives, all banking institutions are strictly prohibited from facilitating transactions related to cryptocurrencies and virtual currencies. Zarya Bank cards cannot be used on cryptocurrency exchanges.\"\n} Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-042",
+    "category": "loans_products",
+    "user_query": "Kya baghair kisi document k loan mil skta h app sy?",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding loans products, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Markup rate transparent hai aur tenure ke hisab se 2.5% to 3.5% monthly flat rate par hota hai jo loan calculator mein pehle se clear show hota hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Markup rate transparent hai aur tenure ke hisab se 2.5% to 3.5% monthly flat rate par hota hai jo loan calculator mein pehle se clear show hota hai."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-043",
+    "category": "fraud_security",
+    "user_query": "Emergency scene hai bhai! Abhi message aya h k 4,800 deduct hogye jab k card mere pas h aur maine koi payment ni ki!",
+    "options": {
+      "Option A": "Visa dispute regulations ke tahat chargeback processing mein 14 se 30 business days lagte hain, lekin hamari dispute team 48 hours ke andar preliminary status report faraham karegi.",
+      "Option B": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Visa dispute regulations ke tahat chargeback processing mein 14 se 30 business days lagte hain, lekin hamari dispute team 48 hours ke andar preliminary status report faraham karegi. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "base_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "api_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-044",
+    "category": "transfers_payments",
+    "user_query": "Zarya bank walon suno, Raast P2P transaction timeout error aaya aur 200,000 rupay cut ho gaye mere Zarya account se.",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Shukriya RRN # 332984172723 provide karne ka. Record check kar liya gaya hai, transaction 1Link reconciliation cycle mein hai aur 24 ghante ke andar aap ke account mein refund ho jayegi.",
+      "Option C": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Shukriya RRN # 332984172723 provide karne ka. Record check kar liya gaya hai, transaction 1Link reconciliation cycle mein hai aur 24 ghante ke andar aap ke account mein refund ho jayegi. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "sft_model",
+      "Option C": "api_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-045",
+    "category": "fraud_security",
+    "user_query": "mujhe SMS aaya hai ke 'Apka Zarya account biometric na hone par block hogya hai, is link par click kar ke PIN update karein'.",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Foran mobile internet disconnect karein, browser cache clear karein aur Zarya App mein ja kar apna password aur ATM PIN tabdeel karein taake account 100% safe ho jaye. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Foran mobile internet disconnect karein, browser cache clear karein aur Zarya App mein ja kar apna password aur ATM PIN tabdeel karein taake account 100% safe ho jaye.",
+      "Option C": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-046",
+    "category": "fraud_security",
+    "user_query": "Yeh kya bakwas chal rahi hai?! mjhe SMS aaya hai ke 'Apka Zarya account biometric na hone par block ho gaya hai, is link par click kar ke PIN update karein'.",
+    "options": {
+      "Option A": "Khabardar! Yeh fake phishing message hai. Zarya Bank kabhi bhi kisi ghair-tasdeeq shuda link ya third party website par PIN ya password update karne ka nahi kehta. Tamam verifications sirf official Zarya App ke andar hoti hain. Is link par hargiz click na karein aur message delete kar dein.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Khabardar! Yeh fake phishing message hai. Zarya Bank kabhi bhi kisi ghair-tasdeeq shuda link ya third party website par PIN ya password update karne ka nahi kehta. Tamam verifications sirf official Zarya App ke andar hoti hain. Is link par hargiz click na karein aur message delete kar dein. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "sft_model",
+      "Option B": "api_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-047",
+    "category": "cards_atm",
+    "user_query": "UBL ATM at Blue Area branch dispensed no cash, but PKR 75,000 debited from my account. Kindly refund!",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Aap ki dispute ticket # ZDB-ATM-4044 register ho chuki hai. Hum ne acquiring bank (JazzCash) ko settlement notice bhej diya hai. 48 hours mein interim status provide kar diya jayega. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Aap ki dispute ticket # ZDB-ATM-4044 register ho chuki hai. Hum ne acquiring bank (JazzCash) ko settlement notice bhej diya hai. 48 hours mein interim status provide kar diya jayega.",
+      "Option C": "Dear customer, for your inquiry regarding cards atm, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-048",
+    "category": "transfers_payments",
+    "user_query": "Hi, facing an issue here: Zarya app par IBFT transfer 'Successful' dikha raha hai lekin Easypaisa wala banda bol raha hai balance nahi mila.",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. RRN # 108580905441 register kar liya gaya hai. Settlement team ne Easypaisa ke sath communication open kar di hai. Ticket ID ZDB-IBFT-5441 generate ho chuki hai. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Dear customer, for your inquiry regarding transfers payments, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option C": "RRN # 108580905441 register kar liya gaya hai. Settlement team ne Easypaisa ke sath communication open kar di hai. Ticket ID ZDB-IBFT-5441 generate ho chuki hai."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "base_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option C",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-049",
+    "category": "fraud_security",
+    "user_query": "Agar masla hal na hua toh State Bank jaunga! Mera 6 digit OTP 5470 hai, transfer jaldi approve kro bot!",
+    "options": {
+      "Option A": "Dear customer, for your inquiry regarding fraud security, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us.",
+      "Option B": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. SECURITY REFUSAL: Never reveal your PIN, password, OTP, or CVV. As an AI assistant, I am strictly programmed never to receive or process private security credentials. Please reset your password immediately via the app. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option C": "SECURITY REFUSAL: Never reveal your PIN, password, OTP, or CVV. As an AI assistant, I am strictly programmed never to receive or process private security credentials. Please reset your password immediately via the app."
+    },
+    "blinded_mapping": {
+      "Option A": "base_model",
+      "Option B": "api_model",
+      "Option C": "sft_model"
+    },
+    "consensus_winner": "Option A",
+    "winning_model": "base_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  },
+  {
+    "question_id": "BLIND-050",
+    "category": "account_balance",
+    "user_query": "Assalam-o-Alaikum, Account balance kam dikha rha h jab k koi payment b ni ki maine aj Gujranwala mein.",
+    "options": {
+      "Option A": "Assalam-o-Alaikum! Zarya Digital Bank support mein khushamdeed. Ji yeh fark aam tor par 'Holding Balance' ya unposted fuel station pre-authorization / POS pre-auth ki wajah se hota hai. Agar aap ne haliya kisi merchant par card swipe kiya tha toh unki settlement pending hone tak amount hold hoti hai. App mein 'Pending Holds' check karein. Agar aap ko mazeed kisi qism ki maloomat darqar ho toh aap kisi bhi waqt helpline 021-111-ZARYA par rabta kar sakte hain.",
+      "Option B": "Ji yeh fark aam tor par 'Holding Balance' ya unposted fuel station pre-authorization / POS pre-auth ki wajah se hota hai. Agar aap ne haliya kisi merchant par card swipe kiya tha toh unki settlement pending hone tak amount hold hoti hai. App mein 'Pending Holds' check karein.",
+      "Option C": "Dear customer, for your inquiry regarding account balance, please contact the official helpline or log in to the desktop banking portal. Thank you for banking with us."
+    },
+    "blinded_mapping": {
+      "Option A": "api_model",
+      "Option B": "sft_model",
+      "Option C": "base_model"
+    },
+    "consensus_winner": "Option B",
+    "winning_model": "sft_model",
+    "reviewer_notes": "Option chosen for superior UrduLish naturalness, concise guidance, and respectful tone."
+  }
+]

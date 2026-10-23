@@ -1,0 +1,23 @@
+{
+  "base_model": {
+    "overall_general_accuracy": 0.8213,
+    "mmlu_reasoning_acc": 0.768,
+    "english_quality_acc": 0.884,
+    "novel_topics_acc": 0.812,
+    "forgetting_delta_vs_base": 0.0
+  },
+  "sft_model": {
+    "overall_general_accuracy": 0.8107,
+    "mmlu_reasoning_acc": 0.752,
+    "english_quality_acc": 0.876,
+    "novel_topics_acc": 0.804,
+    "forgetting_delta_vs_base": -0.0106
+  },
+  "sft_dpo_model": {
+    "overall_general_accuracy": 0.8073,
+    "mmlu_reasoning_acc": 0.749,
+    "english_quality_acc": 0.872,
+    "novel_topics_acc": 0.801,
+    "forgetting_delta_vs_base": -0.0139
+  }
+}

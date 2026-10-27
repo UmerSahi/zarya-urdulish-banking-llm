@@ -1,0 +1,38 @@
+{
+  "10_users": {
+    "concurrent_users": 10,
+    "total_requests": 100,
+    "throughput_rps": 72.85,
+    "tokens_per_second": 142.5,
+    "latency_p50_ms": 135.3,
+    "latency_p90_ms": 186.6,
+    "latency_p95_ms": 198.4,
+    "latency_p99_ms": 224.0,
+    "gpu_vram_gb": 2.45,
+    "error_rate_pct": 0.0
+  },
+  "50_users": {
+    "concurrent_users": 50,
+    "total_requests": 500,
+    "throughput_rps": 177.78,
+    "tokens_per_second": 368.0,
+    "latency_p50_ms": 276.2,
+    "latency_p90_ms": 395.6,
+    "latency_p95_ms": 428.3,
+    "latency_p99_ms": 485.4,
+    "gpu_vram_gb": 3.1,
+    "error_rate_pct": 0.0
+  },
+  "100_users": {
+    "concurrent_users": 100,
+    "total_requests": 1000,
+    "throughput_rps": 184.84,
+    "tokens_per_second": 582.0,
+    "latency_p50_ms": 544.1,
+    "latency_p90_ms": 745.7,
+    "latency_p95_ms": 805.8,
+    "latency_p99_ms": 906.2,
+    "gpu_vram_gb": 3.85,
+    "error_rate_pct": 0.0
+  }
+}

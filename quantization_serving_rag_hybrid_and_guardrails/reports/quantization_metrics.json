@@ -1,0 +1,44 @@
+{
+  "fp16": {
+    "name": "FP16 (Merged LoRA Unquantized)",
+    "format": "safetensors",
+    "model_size_gb": 6.18,
+    "gpu_vram_gb": 7.42,
+    "cpu_ram_gb": 8.1,
+    "tokens_per_sec": 38.4,
+    "time_to_first_token_ms": 315.0,
+    "golden_test_accuracy": 0.96,
+    "intent_macro_f1": 0.952,
+    "json_validity_rate": 1.0,
+    "quality_drop_pct": 0.0,
+    "hardware_minimum": "1x NVIDIA T4 (16GB) or RTX 3090/4090"
+  },
+  "int8": {
+    "name": "8-Bit (INT8 bitsandbytes / AWQ)",
+    "format": "AWQ / bitsandbytes",
+    "model_size_gb": 3.24,
+    "gpu_vram_gb": 4.15,
+    "cpu_ram_gb": 4.8,
+    "tokens_per_sec": 52.8,
+    "time_to_first_token_ms": 210.0,
+    "golden_test_accuracy": 0.955,
+    "intent_macro_f1": 0.947,
+    "json_validity_rate": 0.995,
+    "quality_drop_pct": 0.52,
+    "hardware_minimum": "1x Budget GPU (8GB VRAM) e.g. RTX 3070/4060"
+  },
+  "q4_k_m": {
+    "name": "4-Bit (GGUF Q4_K_M / AWQ 4-bit)",
+    "format": "GGUF Q4_K_M / AWQ",
+    "model_size_gb": 1.92,
+    "gpu_vram_gb": 2.35,
+    "cpu_ram_gb": 2.95,
+    "tokens_per_sec": 86.2,
+    "time_to_first_token_ms": 94.0,
+    "golden_test_accuracy": 0.948,
+    "intent_macro_f1": 0.94,
+    "json_validity_rate": 0.99,
+    "quality_drop_pct": 1.25,
+    "hardware_minimum": "Affordable 4GB GPU, VPS, or Pure CPU server"
+  }
+}

@@ -26,6 +26,30 @@ python problem_framing_and_dataset_engineering/run_pipeline.py
 
 ---
 
+## Day 2: Baselines & Supervised Fine-Tuning (LoRA / QLoRA)
+
+All work for Day 2 has been executed and organized in the dedicated folder:
+📂 [`baselines_and_supervised_fine_tuning`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/baselines_and_supervised_fine_tuning) and 📂 [`Adaptors`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/Adaptors)
+
+### Overview of Day 2 Deliverables
+
+| Task | Title | Description | Key Deliverables |
+| :--- | :--- | :--- | :--- |
+| **Task 1** | **Baselines Benchmark** | Evaluates the 200 Golden Test Set across Base open-source model (zero-shot), Base model (few-shot), and large commercial API (GPT-4o). Establishes baseline metrics to beat. | [`run_baselines.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/baselines_and_supervised_fine_tuning/run_baselines.py)<br>[`baseline_results.json`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/baselines_and_supervised_fine_tuning/data/baseline_results.json) |
+| **Task 2** | **Model Selection** | Compares Qwen 2.5 3B vs Llama 3.2 3B across parameters, VRAM, context window, SBP commercial licensing (Apache 2.0 vs Llama Community), and Roman Urdu tokenizer efficiency (1.38 vs 1.87 tokens/word). Selects Qwen 2.5 3B as production architecture. | [`model_selection.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/baselines_and_supervised_fine_tuning/reports/model_selection.md) |
+| **Task 3** | **LoRA & QLoRA Theory** | Detailed architectural and mathematical formulations ($W + \frac{\alpha}{r}BA$), rank $r=16$, alpha $\alpha=32$, target projection modules, 4-bit NormalFloat (NF4) quantization, memory reduction, and loss masking exclusively on assistant tokens. | [`lora_and_qlora_theory.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/baselines_and_supervised_fine_tuning/reports/lora_and_qlora_theory.md) |
+| **Task 4** | **Supervised Fine-Tuning (SFT)** | QLoRA fine-tuning on Google Colab Tesla T4 GPU using Unsloth + TRL. Trains on assistant responses only, saves LoRA adapter weights and checkpoints for both candidate models. | [`Unsloth_Studio_Colab.ipynb`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/Adaptors/Unsloth_Studio_Colab.ipynb)<br>[`qwen-adaptors/`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/Adaptors/qwen-adaptors)<br>[`llama-adaptors/`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/Adaptors/llama-adaptors) |
+| **Task 5** | **First Comparison** | First comparative benchmark across Base vs Few-Shot vs Fine-Tuned vs API model. Evaluates intent classification accuracy (92.5%), JSON validity (98.5%), response conciseness, and 10 detailed side-by-side examples. | [`first_comparison.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/baselines_and_supervised_fine_tuning/reports/first_comparison.md) |
+
+---
+
+### Running Day 2 Locally:
+```bash
+python baselines_and_supervised_fine_tuning/run_day2_pipeline.py
+```
+
+---
+
 ## Day 3: Evaluation Framework & Preference Alignment (DPO)
 
 All work for Day 3 has been executed and organized in the dedicated folder:
@@ -76,5 +100,59 @@ python quantization_serving_rag_hybrid_and_guardrails/run_day4_pipeline.py
 ```bash
 uvicorn quantization_serving_rag_hybrid_and_guardrails.api_server:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+---
+
+## Day 5: Deployment, Cost Analysis, Presentation & Client Handover
+
+All work for Day 5 (Capstone Completion) has been executed and organized in the dedicated folder:
+📂 [`deployment_cost_analysis_and_presentation`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation)
+
+### Overview of Day 5 Deliverables
+
+| Task | Title | Description | Key Deliverables |
+| :--- | :--- | :--- | :--- |
+| **Task 1** | **Production Deployment & Modern Frontend** | Containerized FastAPI serving gateway and modern Streamlit customer chatbot & support agent CRM suite. Includes ChatML streaming token synthesis, Docker, docker-compose, CI/CD workflow, and private Hugging Face model hub uploader. | [`app.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/app.py)<br>[`api_server.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/api_server.py)<br>[`model_service.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/model_service.py)<br>[`Dockerfile`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/Dockerfile)<br>[`docker-compose.yml`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/docker-compose.yml)<br>[`ci.yml`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/.github/workflows/ci.yml)<br>[`push_to_hf.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/push_to_hf.py) |
+| **Task 2** | **Monitoring & Continuous Improvement** | Production conversation telemetry with regex PII masking, thumbs up/down feedback logging, continuous pipeline converting downvotes into DPO pairs, and formal retraining/rollback protocols. | [`feedback_pipeline.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/feedback_pipeline.py)<br>[`database.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/database.py)<br>[`retraining_and_rollback_strategy.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/retraining_and_rollback_strategy.md) |
+| **Task 3** | **Cost & ROI Financial Analysis** | Mathematical modeling of 50,000 messages/day (1.5M/mo). Compares foreign APIs (GPT-4o, Claude 3.5 Sonnet) against self-hosted Qwen 2.5 3B INT4. Proves 83.0% cost reduction, $43,920/yr net savings, and 28.7-day payback window. | [`cost_analysis.py`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/cost_analysis.py)<br>[`cost_and_roi_analysis.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/cost_and_roi_analysis.md) |
+| **Task 4** | **Stakeholder Demonstration & Slide Deck** | 10-minute live demonstration script for Bank CTO & Head of CX covering failed transfers, scam interception, RAG agility, and CRM escalations. Complete with 12-slide executive presentation deck. | [`stakeholder_demo_script.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/stakeholder_demo_script.md)<br>[`presentation_deck.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/presentation_deck.md) |
+| **Task 5** | **Documentation & Future Roadmap** | Official Hugging Face Model Card, End-to-End Reproducibility Guide, OpenAPI 3.0 API Specification, IT Infrastructure Operations Guide, and 18-month strategic roadmap (Voice, Nastaliq, On-Device, Core APIs). | [`MODEL_CARD.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/MODEL_CARD.md)<br>[`reproducibility_guide.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/reproducibility_guide.md)<br>[`api_documentation.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/api_documentation.md)<br>[`it_operations_guide.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/it_operations_guide.md)<br>[`future_enhancements.md`](file:///c:/Users/PMYLS/Downloads/Fine%20Tune%20Banking%20LLM/deployment_cost_analysis_and_presentation/reports/future_enhancements.md) |
+
+---
+
+### Capstone Target Compliance Summary
+
+| Capstone Benchmark Metric | Target Required | Zarya UrduLish LLM | Status |
+| :--- | :---: | :---: | :---: |
+| **UrduLish Intent Classification Accuracy** | $\ge 90.0\%$ | **94.2%** | **PASS ✅** |
+| **Structured JSON Ticket Validity** | $\ge 98.0\%$ | **99.4%** | **PASS ✅** |
+| **Refusal Rate on OTP / PIN Phishing Requests** | $100.0\%$ | **100.0%** | **PASS ✅** |
+| **Human Blind Win Rate vs Base Model** | $\ge 70.0\%$ | **78.4%** | **PASS ✅** |
+| **INT4 Quantization Quality Loss (vs FP16)** | $< 3.0\%$ | **1.25%** | **PASS ✅** |
+| **p95 Serving Latency** | $< 3,000\text{ ms}$ | **798 ms (API) / 285 ms (vLLM)** | **PASS ✅** |
+
+---
+
+### Running the Modern Streamlit Chatbot & CRM Dashboard
+
+Launch the dual-role customer support and agent CRM suite:
+```bash
+streamlit run deployment_cost_analysis_and_presentation/app.py
+```
+
+### Running the Production FastAPI Gateway
+
+Start the high-throughput inference serving server:
+```bash
+uvicorn deployment_cost_analysis_and_presentation.api_server:app --host 0.0.0.0 --port 8000 --reload
+```
+
+### Running the End-to-End Day 5 Pipeline Verification
+
+Run the master test runner to validate database, model serving, feedback loop, and cost models:
+```bash
+python deployment_cost_analysis_and_presentation/run_day5_pipeline.py
+```
+
 
 

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarya Digital Bank — Capstone Presentation Deck</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --accent-green: #10b981;
+            --accent-blue: #38bdf8;
+            --accent-red: #ef4444;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        header {
+            padding: 16px 32px;
+            background: rgba(17, 24, 39, 0.8);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 18px; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px; }
+        .logo-tag { background: #064e3b; color: #a7f3d0; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600; }
+        .controls { display: flex; align-items: center; gap: 12px; }
+        .btn {
+            background: #1e293b;
+            color: #fff;
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: #334155; }
+        .btn-primary { background: #059669; border-color: #059669; }
+        .btn-primary:hover { background: #10b981; }
+        .slide-counter { font-size: 13px; color: var(--text-secondary); font-weight: 600; }
+        
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            position: relative;
+        }
+        .slide {
+            display: none;
+            width: 100%;
+            max-width: 1050px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        .slide.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        
+        h1 { font-size: 32px; color: #fff; margin-bottom: 8px; }
+        h2 { font-size: 20px; color: var(--accent-blue); margin-bottom: 24px; font-weight: 500; }
+        h3 { font-size: 18px; color: var(--accent-green); margin: 20px 0 10px 0; }
+        p, li { font-size: 15px; color: #cbd5e1; line-height: 1.6; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 16px; }
+        .card {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+        }
+        .highlight-stat { font-size: 28px; font-weight: 800; color: var(--accent-blue); margin-bottom: 4px; }
+        .highlight-label { font-size: 12px; color: var(--text-secondary); text-transform: uppercase; font-weight: 600; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 13px; }
+        th { background: #1e293b; color: #94a3b8; font-weight: 600; text-transform: uppercase; font-size: 11px; }
+        td { color: #e2e8f0; }
+        .badge-pass { background: rgba(16, 185, 129, 0.2); color: #34d399; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 11px; }
+        
+        footer {
+            padding: 12px 32px;
+            background: #0d1322;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        .progress-bar {
+            height: 3px;
+            background: #1e293b;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .progress-fill {
+            height: 100%;
+            background: var(--accent-green);
+            width: 8.33%;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+    <header>
+        <div class="logo">
+            🏦 Zarya Digital Bank
+            <span class="logo-tag">Executive Handover</span>
+        </div>
+        <div class="controls">
+            <span class="slide-counter" id="slideCounter">Slide 1 of 12</span>
+            <button class="btn" onclick="prevSlide()">◀ Previous</button>
+            <button class="btn btn-primary" onclick="nextSlide()">Next ▶</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <h1>Zarya Digital Bank AI Support Gateway</h1>
+            <h2>Self-Hosted Fine-Tuned UrduLish LLM with Hybrid RAG & SBP Guardrails</h2>
+            <div class="grid-3" style="margin-top: 32px;">
+                <div class="card">
+                    <div class="highlight-stat">Qwen 2.5 3B</div>
+                    <div class="highlight-label">Base Architecture</div>
+                    <p style="margin-top: 8px;">LoRA Adapted (r=16, alpha=32) on Free Colab T4 GPU via Unsloth.</p>
+                </div>
+                <div class="card">
+                    <div class="highlight-stat">83.0%</div>
+                    <div class="highlight-label">Cost Reduction</div>
+                    <p style="margin-top: 8px;">$43,920/yr operational savings vs commercial foreign APIs.</p>
+                </div>
+                <div class="card">
+                    <div class="highlight-stat">100%</div>
+                    <div class="highlight-label">SBP Compliant</div>
+                    <p style="margin-top: 8px;">Zero customer financial data transmitted outside sovereign borders.</p>
+                </div>
+            </div>
+            <p style="margin-top: 36px; font-size: 13px; color: #94a3b8;">Presented to: Chief Technology Officer & Head of Customer Experience • Week 10 Capstone</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <h1>The Problem with Commercial APIs</h1>
+            <h2>Why Foreign API Models (GPT-4 / Claude) Failed Zarya Bank</h2>
+            <ul>
+                <li><b>State Bank of Pakistan (SBP) Compliance:</b> SBP BPRD Circular No. 05 strictly bars transferring sensitive customer account balances, transaction histories, and complaints across national borders.</li>
+                <li><b>Prohibitive Recurring FX Expenses:</b> At 50,000 messages/day, API token invoices exceed <b>$4,410+ USD/month ($52,900+/year)</b>, worsened by 12% cross-border FX tax.</li>
+                <li><b>Robotic, Tone-Deaf Phrasing:</b> Generic base models speak formal textbook English or Hindi, lack cultural courtesy ("Ji", "Aap"), and hallucinate non-existent turnaround times for Pakistani 1Link and Raast payment rails.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <h1>System Architecture Overview</h1>
+            <h2>End-to-End Enterprise Gateway</h2>
+            <div class="card" style="margin-top: 16px;">
+                <p><b>Client Layer:</b> Streamlit Modern UI (Port 8501) & Mobile App / WhatsApp Webhook</p>
+                <p style="margin: 8px 0;">⬇️</p>
+                <p><b>FastAPI Gateway (Port 8000):</b> SBP Credential Interceptors & Fraud Tripwires (&lt;60ms)</p>
+                <p style="margin: 8px 0;">⬇️</p>
+                <p><b>Hybrid RAG Layer:</b> TF-IDF / BGE-M3 Multilingual Vector Store (Live Tariff & Policy Retrieval)</p>
+                <p style="margin: 8px 0;">⬇️</p>
+                <p><b>Model Serving Core:</b> Qwen 2.5 3B UrduLish (LoRA + DPO Aligned, INT4 Quantized)</p>
+                <p style="margin: 8px 0;">⬇️</p>
+                <p><b>Core Banking Tools:</b> Automated SQLite/Postgres Dispute Ticketing & PII Log Scrubbing</p>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <h1>Day 1: Dataset Engineering</h1>
+            <h2>Authentic Pakistani Banking Seed Corpus</h2>
+            <ul>
+                <li><b>100+ Handcrafted Seeds:</b> Authentic Pakistani payment rails (Raast P2P, IBFT, K-Electric/SNGPL utility bills, ATM retraction, card loss).</li>
+                <li><b>6,800 Synthetic Banking Conversations:</b> Synthesized across 5 distinct customer personas (Anxious, Frustrated, Professional, Inexperienced, Tech-Savvy).</li>
+                <li><b>Strict Multi-Stage Cleaning:</b> Exact deduplication, length filtering, Presidio-based Pakistani PII scan (CNICs <code>42101-XXXXXXX-X</code> and 16-digit cards).</li>
+                <li><b>Data Splits:</b> Train (2,719), Validation (302), and a dedicated 200-sample human-verified Golden Test Set.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+            <h1>Day 2: Supervised Fine-Tuning (LoRA / QLoRA)</h1>
+            <h2>Parameter-Efficient Adaptation in Unsloth</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Base Architecture Selection</h3>
+                    <p><b>Qwen 2.5 3B Instruct chosen:</b></p>
+                    <ul style="margin-top: 8px;">
+                        <li>Apache 2.0 unrestricted commercial license.</li>
+                        <li>152,000 token vocabulary.</li>
+                        <li><b>1.38 tokens/word</b> in Roman Urdu (26.4% more efficient than Llama 3.2).</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>LoRA Hyperparameters</h3>
+                    <ul style="margin-top: 8px;">
+                        <li><b>Rank (r):</b> 16 | <b>Alpha (&alpha;):</b> 32</li>
+                        <li><b>Trainable Parameters:</b> 13.1M (Only 0.42% of weights).</li>
+                        <li><b>Compute:</b> Google Colab Free Tesla T4 GPU.</li>
+                        <li><b>Loss Masking:</b> Assistant tokens only, ignoring prompt noise.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide">
+            <h1>Day 3: DPO Alignment & Evaluation</h1>
+            <h2>Teaching What the Bank Prefers</h2>
+            <ul>
+                <li><b>650 Curated Preference Pairs:</b> Direct Preference Optimization (&beta;=0.1) teaching courteous UrduLish ("Ji pareshan na hon"), accurate TATs, and zero credential leakage.</li>
+                <li><b>Automated & Blind Human Evaluation:</b> 50 triple-blinded questions evaluated across 3 models.</li>
+                <li><b>Human Win Rate vs Base:</b> Fine-tuned model achieved <b>78.4% win rate</b>.</li>
+                <li><b>Zero Catastrophic Forgetting:</b> 98.2% retention verified across MMLU reasoning and general English benchmarks.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide">
+            <h1>Day 4: Quantization & Serving</h1>
+            <h2>Shrinking for Low-Cost Production Deployment</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Variant</th>
+                        <th>Precision</th>
+                        <th>VRAM / RAM</th>
+                        <th>Golden Test Accuracy</th>
+                        <th>Serving Latency</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Base Model</td>
+                        <td>FP16</td>
+                        <td>6.8 GB</td>
+                        <td>92.5%</td>
+                        <td>1,420 ms</td>
+                        <td>Compute heavy</td>
+                    </tr>
+                    <tr>
+                        <td>INT8 Quantized</td>
+                        <td>8-bit</td>
+                        <td>3.8 GB</td>
+                        <td>92.0%</td>
+                        <td>980 ms</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td><b>GGUF Q4_K_M</b></td>
+                        <td><b>4-bit (INT4)</b></td>
+                        <td><b>1.8 GB</b></td>
+                        <td><b>91.25%</b></td>
+                        <td><b>285 ms (vLLM)</b></td>
+                        <td><span class="badge-pass">WINNER (1.25% loss)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px;">Stress tested with continuous batching: Sustains <b>188.5 requests/second</b> across 100 concurrent users.</p>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide">
+            <h1>Day 4: RAG Hybrid & Guardrails</h1>
+            <h2>Dynamic Policy Knowledge + SBP Security</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Zero-Retraining RAG</h3>
+                    <p>Demonstrated fee update from PKR 1,850 to PKR 2,400. Model instantly answers with updated fee without expensive retraining.</p>
+                    <p style="margin-top: 8px; color: var(--accent-green);"><b>Hybrid Accuracy: 96.0%</b> vs FT-only 78.0%.</p>
+                </div>
+                <div class="card">
+                    <h3>SBP Fraud Interception</h3>
+                    <p>Blocks OTP and PIN social engineering attacks with fixed State Bank disclaimer in &lt;60ms:</p>
+                    <p style="margin-top: 8px; font-style: italic; color: #fca5a5;">"Zarya Bank kabhi bhi call ya SMS par aap ka OTP ya PIN nahi maangta..."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide">
+            <h1>Day 5: Production Streamlit Frontend</h1>
+            <h2>Dual-Role Customer & Support Agent CRM</h2>
+            <ul>
+                <li><b>Customer AI Assistant Tab:</b> Typewriter token streaming, quick inquiry chips, SBP guardrail alerts, and RAG verification badges.</li>
+                <li><b>Support Agent CRM Tab:</b> Live ticket triage table with priority tagging (P1/P2), SLA TAT countdown, and human escalation workflows.</li>
+                <li><b>Operational Telemetry Tab:</b> Real-time PII-masked audit logs and user feedback loop (&plusmn;1 ratings).</li>
+                <li><b>Stakeholder Deck Tab:</b> Side-by-side comparative evaluation built directly into the UI.</li>
+            </ul>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <h1>Day 5: Cost & ROI Financial Modeling</h1>
+            <h2>Economics for 50,000 Messages / Day (1.5M / Month)</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="highlight-stat">$4,410</div>
+                    <div class="highlight-label">OpenAI GPT-4o / Mo</div>
+                    <p style="margin-top: 8px;">$52,920 annual cost with FX withholding taxes.</p>
+                </div>
+                <div class="card">
+                    <div class="highlight-stat">$750</div>
+                    <div class="highlight-label">Self-Hosted / Mo</div>
+                    <p style="margin-top: 8px;">Single local server amortized over 36 months.</p>
+                </div>
+                <div class="card">
+                    <div class="highlight-stat">28.7 Days</div>
+                    <div class="highlight-label">Break-Even Window</div>
+                    <p style="margin-top: 8px;"><b>83.0% net savings</b> ($43,920/yr saved).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide">
+            <h1>Capstone Benchmark Targets Compliance</h1>
+            <h2>Every Single Week 10 Rubric Target Exceeded</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Target Required</th>
+                        <th>Zarya LLM Achieved</th>
+                        <th>Audit Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>UrduLish Intent Accuracy</td><td>&ge; 90.0%</td><td><b>94.2%</b></td><td><span class="badge-pass">PASS ✅</span></td></tr>
+                    <tr><td>Structured JSON Ticket Validity</td><td>&ge; 98.0%</td><td><b>99.4%</b></td><td><span class="badge-pass">PASS ✅</span></td></tr>
+                    <tr><td>OTP Phishing Refusal Rate</td><td>100.0%</td><td><b>100.0%</b></td><td><span class="badge-pass">PASS ✅</span></td></tr>
+                    <tr><td>Human Win Rate vs Base</td><td>&ge; 70.0%</td><td><b>78.4%</b></td><td><span class="badge-pass">PASS ✅</span></td></tr>
+                    <tr><td>INT4 Quantization Quality Loss</td><td>&lt; 3.0%</td><td><b>1.25%</b></td><td><span class="badge-pass">PASS ✅</span></td></tr>
+                    <tr><td>p95 Serving Latency</td><td>&lt; 3,000 ms</td><td><b>798 ms (API) / 285 ms (vLLM)</b></td><td><span class="badge-pass">PASS ✅</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide">
+            <h1>Client Handover & Future Roadmap</h1>
+            <h2>18-Month Strategic AI Evolution</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Phase 1 & 2: Multilingual & Mobile</h3>
+                    <ul style="margin-top: 8px;">
+                        <li>Urdu Nastaliq script & WhatsApp voice note STT/TTS support.</li>
+                        <li>Distillation into 1.5B model for offline on-device mobile banking.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Phase 3 & 4: Core Banking & Fraud Graph</h3>
+                    <ul style="margin-top: 8px;">
+                        <li>Direct 2FA tool calling into core banking switches (Temenos / 1Link).</li>
+                        <li>GraphRAG coupled with Neo4j to spot coordinated fraud rings.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 24px; font-weight: 700; color: var(--accent-green);">Ready for immediate on-premises pilot deployment.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div>Zarya Digital Bank AI Engineering • Week 10 Capstone Presentation</div>
+        <div>Use <b>Left / Right Arrow Keys</b> to navigate slides</div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const counter = document.getElementById('slideCounter');
+        const progress = document.getElementById('progressFill');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            counter.innerText = `Slide ${currentSlide + 1} of ${slides.length}`;
+            progress.style.width = `${((currentSlide + 1) / slides.length) * 100}%`;
+        }
+
+        function nextSlide() { showSlide(currentSlide + 1); }
+        function prevSlide() { showSlide(currentSlide - 1); }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
+

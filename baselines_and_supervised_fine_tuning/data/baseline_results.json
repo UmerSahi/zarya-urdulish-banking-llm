@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ZDB-EXP-03528",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-05715",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04519",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04216",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02607",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02147",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01178",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00878",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04304",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01478",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02589",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02549",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03486",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01776",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02040",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-05688",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00281",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01799",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01580",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02776",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04379",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03448",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-06274",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03069",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01112",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00993",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03873",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00211",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00471",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00661",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-06334",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04167",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01701",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03998",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03181",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-00194",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01030",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-06504",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03947",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-06729",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04187",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-03478",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02209",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02987",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-04583",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-01694",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-02428",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-05355",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-06004",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  },
+  {
+    "id": "ZDB-EXP-05362",
+    "query": "Mera Raast transfer fail ho gaya",
+    "base_zero_shot": "I am an AI assistant. Transaction issues should be reported to customer service or visit a branch.",
+    "base_few_shot": "Ji aap ka transfer delay ho sakta hai. Raast system check karein aur helpline par complaint darj karwayein.",
+    "large_api_model": "Ji pareshan na hon, Raast interbank settlement mein kabhi technical delay aa jata hai. Aksar 24 hours mein amount reverse ho jati hai. Agar na ho toh helpline par RRN number share karein."
+  }
+]

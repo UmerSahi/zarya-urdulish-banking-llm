@@ -1,0 +1,43 @@
+name: Zarya AI Banking Gateway CI/CD
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  test-and-lint:
+    name: Backend & Model Gateway Verification
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        cache: "pip"
+
+    - name: Install Core Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install fastapi uvicorn pydantic scikit-learn requests streamlit pytest
+
+    - name: Syntax and Compile Verification
+      run: |
+        python -m py_compile deployment_cost_analysis_and_presentation/model_service.py
+        python -m py_compile deployment_cost_analysis_and_presentation/api_server.py
+        python -m py_compile deployment_cost_analysis_and_presentation/app.py
+        python -m py_compile deployment_cost_analysis_and_presentation/feedback_pipeline.py
+
+    - name: Execute Automated Unit Tests & Guardrail Interceptor Tests
+      run: |
+        python deployment_cost_analysis_and_presentation/run_day5_pipeline.py
+
+    - name: Verify Health Check Endpoint
+      run: |
+        python -c "from deployment_cost_analysis_and_presentation.api_server import health_check; assert health_check()['status'] == 'healthy'"
+

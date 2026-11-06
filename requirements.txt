@@ -1,0 +1,20 @@
+# Zarya Digital Bank UrduLish LLM Stack Dependencies
+# Supports Data Engineering, LoRA Fine-Tuning, DPO Alignment, Quantization, Serving & Frontend
+
+streamlit>=1.30.0
+fastapi>=0.104.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+requests>=2.31.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+torch>=2.1.0
+transformers>=4.38.0
+peft>=0.9.0
+accelerate>=0.27.0
+bitsandbytes>=0.42.0
+jinja2>=3.1.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+pytest>=7.4.0
+
